@@ -1,37 +1,55 @@
-## Dokumentasi Git
+# Dokumentasi Git
 
-You can use the [editor on GitHub](https://github.com/rofinafiin/rofinafiin.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Apa itu Git? Git merupakan salah satu version vontrol sistem yang paling banyak digunakan di seluruh dunia. Untuk menginstall git kita dapat mendownloadnya langsung dari website resmi [git](https://git-scm.com/download/win)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Berikut ini merupakan dokumentasi yang saya buat untuk mengupload project ke Github melalui VCS Git
 
-### Markdown
+## Konfigurasi username dan email Github
+```
+Untuk Username:
+`git config --global user.name "username"`
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Untuk Email:
+`git config --global user.email "contoh@gmail.com"`
+```
+Konfigurasi dilakukan untuk mengatur akun yang akan digunakan dalam Version Control System Git agar dapat melakukan push menuju repository di akun Github anda.
 
-```markdown
-Syntax highlighted code block
+## Melakukan push menuju repository
+```
+`git init`
+```
+Perintah git init digunakan untuk membuat reposistory di file lokal yang anda pilih
 
-# Header 1
-## Header 2
-### Header 3
+```
+`git status`
+```
+Perintah git status digunakan untuk mengetahui status dari repository lokal yang anda buat
 
-- Bulleted
-- List
+```
+`git add .`
+```
+Setelah melakukan pengecekan menggunakan status untuk menambahkan file baru di repository yang dipilih anda dapat menggunakan **git add .** (menambahkan semua file yang ada di dalamnya) atau **git add <file>** (untuk menambahkan file yang belum ada di repository ) 
+Kemudian setelah itu cek kembali status dari repository yang dituju.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+`git commit -m "penjelasan`
+```
+Commit biasa digunakan untuk menyimpan perubahan yang dilakukan, setelah melakukan commit langkah selanjutnya adalah melakukan push menuju repository yang dituju dengan menggunakan perintah:
+```
+`git push origin master` (master/main merupakan tipe branch yang digunakan dalam repository yaang dibuat)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Pull requests
+Pull request biasa digunakan untuk menggabungkan kode (Biasanya digunakan dalam suatu repository yang terdapat lebih dari 1 contributor atau juga untuk mengupdate perubahan yang terjadi pada file dalam repository)
+```
+sebelum mengedit lakukan pull dan fetch terlebih dahulu
+`git pull origin master`
+`git fetch`
+`git push origin master`
+```
+Kemudian lakukan edit pada file yang ada pada repo, jika file belum terdownload atau belum clone, anda dapat melakukan clone dengan cara
+```
+`git clone <url>`
+```
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rofinafiin/rofinafiin.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Nah, untuk melakukan pull request anda tinggal menekan **new pull request** pada repository di github, kemudian atur branch yang akan di compare perbedaannya.
