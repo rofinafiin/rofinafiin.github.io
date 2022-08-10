@@ -44,7 +44,9 @@ Untuk Email:
 
 Sebelum mengedit lakukan pull dan fetch terlebih dahulu
 `git pull origin master`
+
 `git fetch`
+
 `git push origin master`
 
 - Kemudian lakukan edit pada file yang ada pada repo, jika file belum terdownload atau belum clone, anda dapat melakukan clone dengan cara
