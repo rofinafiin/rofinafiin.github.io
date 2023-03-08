@@ -29,15 +29,15 @@ Untuk Email:
 - Setelah melakukan pengecekan menggunakan status untuk menambahkan file baru di repository yang dipilih anda dapat menggunakan **git add .** (menambahkan semua file yang ada di dalamnya) atau **git add <file>** (untuk menambahkan file yang belum ada di repository ) 
 - Kemudian setelah itu cek kembali status dari repository yang dituju.
 ```
-`git commit -m "penjelasan`
+`git commit -m "penjelasan"`
 ```
 - Commit biasa digunakan untuk menyimpan perubahan yang dilakukan, setelah melakukan commit langkah selanjutnya adalah melakukan push menuju repository yang dituju dengan menggunakan perintah:
 ```
 `git push origin master` (master/main merupakan tipe branch yang digunakan dalam repository yang dibuat)
 ```
 
-## Pull requests
-- Pull request biasa digunakan untuk menggabungkan kode (Biasanya digunakan dalam suatu repository yang terdapat lebih dari 1 contributor atau juga untuk mengupdate perubahan yang terjadi pada file dalam repository)
+## Pull
+- Pull biasa digunakan untuk menggabungkan kode (Biasanya digunakan dalam suatu repository yang terdapat lebih dari 1 contributor atau juga untuk mengupdate perubahan yang terjadi pada file dalam repository)
 
 Sebelum mengedit lakukan pull dan fetch terlebih dahulu
 ```
